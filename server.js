@@ -1,5 +1,7 @@
 const { GraphQLServer } = require("graphql-yoga");
 const mongoose = require("mongoose");
+const express = require("express");
+const path = require("path");
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/HuddlieNodes"
